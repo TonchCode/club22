@@ -59,7 +59,7 @@ namespace BoolEquations
                 return;
             }
 
-            if (a + b < c || a + c < b || b + c < a)
+            if (a + b <= c || a + c <= b || b + c < a)
             {
                 Console.WriteLine("Triangle doesn't exist!");
                 Console.ReadKey(true);

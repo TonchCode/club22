@@ -13,6 +13,7 @@ namespace Loops
             // Брояч  for (<param>; <bool>; <exec>)
             //for (int i = 0; i < 50; i++)
             //{
+            //    <exec>
             //    Console.WriteLine(i);
             //}
 

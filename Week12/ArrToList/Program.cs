@@ -43,7 +43,7 @@
 
         static public void SortArray(int[] arr)
         {
-            // Bubble Sort
+            // Selection Sort
             for (int i = 0; i < arr.Length - 1; i++) // Обхождаме масива без последният елемент за да не излизаме извън граници, заради {j = i + 1};
             {
                 for (int j = i + 1; j < arr.Length; j++) // За всеки елемент (i) правим обход през всички останали елементи (j);
@@ -64,7 +64,10 @@
             // public / private / protected / internal / private protected / protected internal
             // void / int / string / char / short / long / byte / double / decimal / float / Object
 
+            int lol = 5;
             int[] array = { 2, 5, 3, 8, 1 };
+            int g = 10;
+            string str = "no";
 
             List<int> list = AsList(array);
 
@@ -76,7 +79,7 @@
 
             int[] arr = AsArray(list);
 
-            // Bubble Sort
+            // Selection Sort
             for (int i = 0; i < arr.Length - 1; i++) // Обхождаме масива без последният елемент за да не излизаме извън граници, заради {j = i + 1};
             {
                 for (int j = i + 1; j < arr.Length; j++) // За всеки елемент (i) правим обход през всички останали елементи (j);

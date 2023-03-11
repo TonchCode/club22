@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLinkedLists", "TheLinkedLists\TheLinkedLists.csproj", "{074E2BBA-B2C9-425E-A38A-803BB565BF23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileReadWrite", "FileReadWrite\FileReadWrite.csproj", "{EFCE30F6-B75D-485A-A5FA-EECC17FABEC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{074E2BBA-B2C9-425E-A38A-803BB565BF23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074E2BBA-B2C9-425E-A38A-803BB565BF23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074E2BBA-B2C9-425E-A38A-803BB565BF23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074E2BBA-B2C9-425E-A38A-803BB565BF23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCE30F6-B75D-485A-A5FA-EECC17FABEC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCE30F6-B75D-485A-A5FA-EECC17FABEC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCE30F6-B75D-485A-A5FA-EECC17FABEC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCE30F6-B75D-485A-A5FA-EECC17FABEC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4341B9BA-F93C-4A6D-A0FC-866116C7485C}
+	EndGlobalSection
+EndGlobal

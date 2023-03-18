@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -90,6 +91,7 @@ namespace TheLinkedLists
             if (count == 1 && first.value == value)
             {
                 first = null;
+                count--;
                 return true;
             }
             else if (count == 1)
@@ -120,7 +122,92 @@ namespace TheLinkedLists
             return false;
         }
 
-        public int ElementAt(int position) // PositionOf(int value)
+        public bool RemoveAt(int pos)
+        {
+            if (pos > count)
+            {
+                return false;
+            }
+
+            if (count == 0)
+            {
+                return false;
+            }
+
+            if (count == 1)
+            {
+                first = null;
+                count--;
+                return true;
+            }
+
+            if (pos == 1)
+            {
+                first = first.next;
+                count--;
+            }
+
+            LLElement temp = first;
+
+            int i = 1;
+            while (i < pos-1) // -1 because of 0 index
+            {
+                temp = temp.next;
+                i++;
+            }
+            temp.next = temp.next.next;
+            count--;
+            return true;
+        }
+
+        public bool RemoveFirst()
+        {
+            if (count == 0)
+            {
+                return false;
+            }
+
+            if (first.next == null)
+            {
+                first = null;
+                count--;
+                return true;
+            }
+
+            first = first.next;
+            count--;
+
+            return true;
+        }
+
+        public bool RemoveLast()
+        {
+            if (count == 0)
+            {
+                return false;
+            }
+
+            if (count == 1)
+            {
+                first = null;
+                count--;
+                return true;
+            }
+
+            LLElement temp = first;
+
+            int i = 1;
+            while (i < count -1)
+            {
+                temp = temp.next;
+                i++;
+            }
+            temp.next = null;
+            count--;
+            return true;
+        }
+
+        public int ElementAt(int position) // PositionOfFirstFoundValue(int value)
         {
             LLElement p = first;
 

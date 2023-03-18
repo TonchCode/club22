@@ -6,22 +6,30 @@
         {
             MyLinkedList linkedList = new MyLinkedList();
 
+            linkedList.AddFirst(101);
+            linkedList.Print();
             linkedList.AddLast(4);
             linkedList.AddLast(5);
             linkedList.AddLast(2);
             linkedList.AddLast(7);
             linkedList.AddLast(1);
+            linkedList.Print();
+            linkedList.AddFirst(101);
+            linkedList.Print();
             linkedList.AddLast(79);
             linkedList.AddLast(3);
             linkedList.AddLast(67);
             linkedList.AddLast(4);
 
             linkedList.Print();
-            linkedList.RemoveValue(7);
+            linkedList.RemoveFirstFoundValue(7);
             linkedList.Print();
-            linkedList.RemoveValue(9);
+            linkedList.RemoveFirstFoundValue(9);
             linkedList.Print();
-            linkedList.RemoveValue(4);
+            linkedList.RemoveFirstFoundValue(4);
+            linkedList.Print();
+
+            linkedList.AddFirst(101);
             linkedList.Print();
 
             Console.WriteLine(linkedList.ElementAt(4));

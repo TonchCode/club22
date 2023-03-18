@@ -62,8 +62,25 @@ namespace TheLinkedLists
             count++;
         }
 
+        public void AddFirst(int item)
+        {
+            if (count == 0)
+            {
+                first = new LLElement();
+                first.value = item;
+                count++;
+                return;
+            }
+
+            LLElement temp = new LLElement();
+            temp.value = item;
+            temp.next = first;
+            first = temp;
+            count++;
+        }
+
         // RemoveAt(int position) RemoveFirst() RemoveLast() for homework
-        public bool RemoveValue(int value) // returns true on delete, false if there was no such element
+        public bool RemoveFirstFoundValue(int value) // returns true on delete, false if there was no such element
         {
             if (first == null)
             {

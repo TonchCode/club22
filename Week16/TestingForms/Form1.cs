@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace TestingForms
 {
     public partial class Form1 : Form
     {
+        bool firstBox = true;
         public Form1()
         {
             InitializeComponent();
@@ -24,6 +26,14 @@ namespace TestingForms
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
+            if (firstBox) 
+            {
+                
+            }
+            else
+            {
+
+            }
         }
 
 
@@ -32,5 +42,19 @@ namespace TestingForms
             SumAns.Text = (Convert.ToInt32(Sum1.Text) + Convert.ToInt32(Sum2.Text)).ToString();
         }// + - * / %
 
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            firstBox = false;
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            firstBox = true;
+        }
+
+        private void Sum1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

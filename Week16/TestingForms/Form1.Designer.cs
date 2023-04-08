@@ -59,6 +59,7 @@
             this.Sum1.Name = "Sum1";
             this.Sum1.Size = new System.Drawing.Size(34, 23);
             this.Sum1.TabIndex = 1;
+            this.Sum1.TextChanged += new System.EventHandler(this.Sum1_TextChanged);
             // 
             // Sum2
             // 
@@ -125,13 +126,15 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(29, 23);
             this.textBox1.TabIndex = 11;
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 52);
+            this.textBox2.Location = new System.Drawing.Point(12, 54);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(34, 23);
             this.textBox2.TabIndex = 10;
+            this.textBox2.Click += new System.EventHandler(this.textBox2_Click);
             // 
             // Form1
             // 
